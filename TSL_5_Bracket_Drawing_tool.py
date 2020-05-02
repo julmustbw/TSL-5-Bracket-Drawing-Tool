@@ -4,7 +4,7 @@ def ro24():
     top_bucket = [
         "Reynor", "Lambo",              # From EU qualifiers
         "Solar", "Trap", "KR3 #1",      # From KR qualifiers
-        "Elazer", "NA2 #1", "NA3 #1"    # From NA qualifiers
+        "Elazer", "SpeCial", "NA3 #1"    # From NA qualifiers
     ]
     bottom_bucket = [
         "uThermal", "MaNa",             # From EU qualifiers
@@ -33,7 +33,7 @@ def ro16():
     if len(ro16_players) == 8:
         print("======== Round of 16 ========")
         while ro16_players:
-            player = ro16_players.pop(randrange((len(ro16_players))))
+            player = ro16_players.pop(randrange(len(ro16_players)))
             counter += 1
             print(f"Match {counter}: {player} vs. TBD")
 
